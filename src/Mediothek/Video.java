@@ -2,8 +2,14 @@ package Mediothek;
 
 public class Video extends Medien {
 	
-	public Video(String title) {
+	private int lengthMin;
+	
+	public Video(String title, int lengthMin) {
 		super(title);
+		this.lengthMin = lengthMin;
 	}
 	
+	public int getLengthMin() {
+		return lengthMin;
+	}
 }

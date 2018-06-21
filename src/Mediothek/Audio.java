@@ -2,7 +2,14 @@ package Mediothek;
 
 public class Audio extends Medien {
 	
-	public Audio(String title) {
+	private int lengthMin;
+	
+	public Audio(String title, int lengthMin) {
 		super(title);
+		this.lengthMin = lengthMin;
+	}
+	
+	public int getLengthMin() {
+		return lengthMin;
 	}
 }
