@@ -17,6 +17,13 @@ public abstract class Medien {
 		this.AusleihDatum = new Date();
 	}
 	
+	public Medien() {
+		this.titel = "";
+		idCounter++;
+		id = idCounter;
+		this.AusleihDatum = new Date();
+	}
+	
 	public String getTitel() {
 		return titel;
 	}
